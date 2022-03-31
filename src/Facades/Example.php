@@ -1,0 +1,16 @@
+<?php
+
+namespace PatStan\Example\Facades;
+
+use Illuminate\Support\Facades\Facade;
+
+/**
+ * @see \PatStan\Example\Example
+ */
+class Example extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'laravel-example-package';
+    }
+}

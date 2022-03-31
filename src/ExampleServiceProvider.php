@@ -2,9 +2,9 @@
 
 namespace PatStan\Example;
 
+use PatStan\Example\Commands\ExampleCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use PatStan\Example\Commands\ExampleCommand;
 
 class ExampleServiceProvider extends PackageServiceProvider
 {

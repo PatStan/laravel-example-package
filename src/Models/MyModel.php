@@ -11,7 +11,7 @@ class MyModel extends Model
 
     public $guarded = [];
 
-    public function getUppercaseName() : string
+    public function getUppercaseName(): string
     {
         return strtoupper($this->name);
     }

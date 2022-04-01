@@ -9,7 +9,7 @@ class MyModel extends Model
 {
     use HasFactory;
 
-    public $guarded = [];
+    protected $guarded = [];
 
     public function getUppercaseName() : string
     {

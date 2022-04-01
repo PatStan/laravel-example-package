@@ -29,7 +29,7 @@ composer require patstan/laravel-example-package
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-example-package-migrations"
+php artisan vendor:publish --tag="example-package-migrations"
 php artisan migrate
 ```
 

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use PatStan\Example\ExampleServiceProvider;
 
-class TestCase extends Orchestra
+class  TestCase extends Orchestra
 {
     protected function setUp(): void
     {
@@ -28,9 +28,7 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-example-package_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_my_models_table.php';
         $migration->up();
-        */
     }
 }

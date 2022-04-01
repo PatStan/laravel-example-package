@@ -1,5 +1,8 @@
 <?php
-// config for PatStan/Example
-return [
 
+return [
+    /*
+     * This value is shown when the example command is executed. Oh yeah.
+     */
+    'command_output' => 'output configured in config file',
 ];

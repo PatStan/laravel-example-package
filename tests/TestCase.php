@@ -3,6 +3,7 @@
 namespace PatStan\Example\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
 use PatStan\Example\ExampleServiceProvider;
 
@@ -26,7 +27,8 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
+        Schema::dropAllTables();
+        //config()->set('database.default', 'testing');
 
         $migration = include __DIR__.'/../database/migrations/create_my_models_table.php';
         $migration->up();

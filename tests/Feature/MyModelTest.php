@@ -7,3 +7,11 @@ it('can return uppercased value of a name', function () {
 
     expect($myModel->getUppercaseName())->toEqual('JOHN');
 });
+
+it('can use json queries', function(){
+    $models = DB::table('my_models')
+        ->whereJsonContains('options->languages', 'en')
+        ->get();
+
+    expect($models)->toHaveCount(0);
+});

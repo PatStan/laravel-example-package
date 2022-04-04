@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('my_models', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->json('options')->nullable();
             $table->timestamps();
         });
     }

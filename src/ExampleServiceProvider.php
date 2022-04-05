@@ -22,8 +22,8 @@ class ExampleServiceProvider extends PackageServiceProvider
 
     public function packageRegistered()
     {
-        Route::macro('example', function(string $baseUrl = 'example') {
-            Route::prefix($baseUrl)->group(function() {
+        Route::macro('example', function (string $baseUrl = 'example') {
+            Route::prefix($baseUrl)->group(function () {
                 Route::get('/', [MyController::class, 'index']);
             });
         });
